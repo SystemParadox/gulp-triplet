@@ -1,0 +1,41 @@
+{
+  "name": "gulp-triplet",
+  "version": "1.0.0",
+  "description": "gulp plugin for triplet strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SystemParadox/gulp-triplet.git"
+  },
+  "keywords": [
+    "gulp",
+    "triplet",
+    "strings",
+    "multiline",
+    "here",
+    "document",
+    "parser",
+    "preprocessor",
+    "triple",
+    "quote"
+  ],
+  "author": "Simon Williams <simon@systemparadox.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SystemParadox/gulp-triplet/issues"
+  },
+  "homepage": "https://github.com/SystemParadox/gulp-triplet",
+  "dependencies": {
+    "through2": "^2.0.0",
+    "triplet": "^1.0.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "event-stream": "^3.3.1",
+    "gulp-util": "^3.0.6",
+    "vinyl": "^0.5.3"
+  }
+}
