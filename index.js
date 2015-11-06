@@ -9,15 +9,17 @@ var path = require('path');
 
 module.exports = function (options) {
     return through.obj(function(file, enc, cb) {
-        options = _.extend({}, options);
-        options.filename = path.relative(file.cwd, file.path);
+        var opts = _.extend({}, options);
+        if (file.path && ! opts.filename) {
+            opts.filename = path.relative(file.cwd, file.path);
+        }
         if (file.isBuffer()) {
-            var output = triplet(file.contents, options);
+            var output = triplet(file.contents, opts);
             file.contents = new Buffer(output);
         }
 
         if (file.isStream()) {
-            file.contents = triplet(file.contents, options);
+            file.contents = triplet(file.contents, opts);
         }
 
         this.push(file);
