@@ -29,13 +29,17 @@
   },
   "homepage": "https://github.com/SystemParadox/gulp-triplet",
   "dependencies": {
+    "gulp-util": "^3.0.6",
+    "object-assign": "^4.1.0",
     "through2": "^2.0.0",
-    "triplet": "^1.0.2",
-    "underscore": "^1.8.3"
+    "triplet": "^1.0.2"
   },
   "devDependencies": {
     "event-stream": "^3.3.1",
-    "gulp-util": "^3.0.6",
+    "mocha": "^3.2.0",
     "vinyl": "^0.5.3"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
