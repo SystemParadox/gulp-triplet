@@ -32,7 +32,7 @@
     "gulp-util": "^3.0.6",
     "object-assign": "^4.1.0",
     "through2": "^2.0.0",
-    "triplet": "^1.0.2"
+    "triplet": "^1.2.0"
   },
   "devDependencies": {
     "event-stream": "^3.3.1",
