@@ -1,6 +1,6 @@
 {
   "name": "gulp-triplet",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "gulp plugin for triplet strings",
   "main": "index.js",
   "scripts": {
